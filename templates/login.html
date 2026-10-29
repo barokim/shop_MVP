@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>로그인 | AI-Marine Shop</title><link rel="stylesheet" href="/static/css/app.css">
+  <script type="module" src="/static/js/auth.js"></script>
+</head>
+<body data-page="login">
+  <a class="skip-link" href="#main">본문 바로가기</a><header id="site-header" class="site-header"></header>
+  <main id="main" class="shell">
+    <div class="auth-wrap">
+      <div class="page-heading"><p class="eyebrow">반가워요</p><h1>다시 만나 반갑습니다.</h1><p class="muted">로그인하고 쇼핑을 이어가세요.</p></div>
+      <div id="page-message" role="status" aria-live="polite" hidden></div>
+      <form id="login-form" class="panel auth-panel">
+        <div class="field"><label for="email">이메일</label><input id="email" name="email" type="email" autocomplete="username" maxlength="254" required></div>
+        <div class="field"><label for="password">비밀번호</label><input id="password" name="password" type="password" autocomplete="current-password" maxlength="72" required></div>
+        <button class="button full" type="submit">로그인</button>
+        <p class="auth-footer">처음 방문하셨나요? <a href="/signup">회원가입</a></p>
+      </form>
+    </div>
+  </main>
+  <footer id="site-footer"></footer><div id="site-navigation"></div>
+</body>
+</html>

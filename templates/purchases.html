@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>구매내역 | AI-Marine Shop</title><link rel="stylesheet" href="/static/css/app.css">
+  <script type="module" src="/static/js/purchases.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a><header id="site-header" class="site-header"></header>
+  <main id="main" class="shell">
+    <a href="/account" class="back-link">← 회원정보</a>
+    <div class="page-heading"><p class="eyebrow">나의 쇼핑 기록</p><h1>구매내역</h1><p class="muted">결제 완료된 주문을 최신순으로 확인하세요.</p></div>
+    <div id="page-message" role="status" aria-live="polite" hidden></div>
+    <p id="purchase-count" class="muted"></p>
+    <div id="purchase-list" aria-busy="true"><p class="loading" role="status">구매내역을 불러오는 중입니다.</p></div>
+    <nav id="purchase-pager" class="pager" aria-label="구매내역 페이지" hidden>
+      <button id="previous-page" class="button secondary" type="button">이전</button><span id="page-number"></span><button id="next-page" class="button secondary" type="button">다음</button>
+    </nav>
+  </main>
+  <footer id="site-footer"></footer><div id="site-navigation"></div>
+</body>
+</html>

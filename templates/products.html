@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="초록과 파랑이 만나는 일상, AI-Marine Shop의 상품을 만나보세요.">
+  <title>상품목록 | AI-Marine Shop</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script type="module" src="/static/js/products.js"></script>
+</head>
+<body data-page="products">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header id="site-header" class="site-header"></header>
+  <main id="main" class="shell">
+    <section class="hero">
+      <div><p class="eyebrow">AI-MARINE COLLECTION</p><h1>초록의 편안함,<br><span class="marine-accent">파랑의 산뜻함.</span></h1><p class="muted">일상을 채우는 작은 물건, AI-Marine Shop에서 만나보세요.</p></div>
+      <p class="hero-caption">자연을 닮은 두 가지 색<br>일상에 스며드는 작은 물건들.</p>
+    </section>
+    <div id="page-message" role="status" aria-live="polite" hidden></div>
+    <div class="row page-heading"><h2>전체 상품</h2><span id="product-count" class="muted"></span></div>
+    <div id="product-list" class="product-grid" aria-busy="true"><p class="loading" role="status">상품을 불러오는 중입니다.</p></div>
+    <nav id="product-pager" class="pager" aria-label="상품 페이지" hidden>
+      <button id="previous-page" class="button secondary" type="button">이전</button><span id="page-number"></span><button id="next-page" class="button secondary" type="button">다음</button>
+    </nav>
+  </main>
+  <footer id="site-footer"></footer><div id="site-navigation"></div>
+</body>
+</html>
